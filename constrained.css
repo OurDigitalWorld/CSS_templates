@@ -1,0 +1,2094 @@
+/* modified Vita 4.2.3 Public CSS file (content area constrained to 1024px width body)*/
+/* COLOUR VARIABLE parameters*/
+/* multi-column clippings*/
+/* hit highlighting */
+/* standard elements*/
+/*panzoom views*/
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family:"Lucida Grande", Geneva, Verdana, sans-serif;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	background-color: [[colour_01]];
+	text-align:left;
+	background-repeat: repeat-x;
+	display: block;
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.bodyContent {
+	background-color: [[colour_02]];
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom: 200px;
+	}
+
+p { 
+  	text-indent:  12px;
+  	margin-top: 0pt;
+  	margin-bottom: 0pt;
+}
+.small {
+	font-size: .75em;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+a img{
+	text-decoration: none;
+	border-width: 0;
+}
+a:link, a:visited, a:hover {
+	text-decoration: none;
+}
+table, tbody, tr, td{ margin: 1em 0; }
+
+.width50 {
+	width: 50%;
+}
+
+.absmiddle {
+	vertical-align: middle;
+	margin-bottom: .25em;
+}
+.noBreak {
+	display: inline-block;
+}
+
+/* ALL (or most) PAGES
+*************************************** */
+
+.pageTitle div.h2 {
+	text-indent: 0pt;
+	margin-top: 1px;
+  	color:  [[colour_03]];
+	display: block;
+	font-size: 1.15em;
+	}
+
+/* Navbar  - styles breadcrumb menu on most public pages*/
+.NavBar {
+	display: block;
+	/*font-weight: bold;*/
+	margin-top:6px;
+	margin-bottom: 6px;
+	border: solid [[colour_04]]; 
+	border-width: 2px 0;
+	color:  [[colour_05]];
+	height: auto;
+	font-size: .8em;
+	}
+.NavBar a {
+	margin: 0; 
+	text-decoration: none; 
+	}
+
+.NavBar form{
+	display: inline;
+	}
+.NavBar form input{
+	margin: 2px;
+	}
+	
+form .Inline {
+	display: inline;
+	}
+form .label {
+	}
+	
+.NavBarButtonSubmit{
+	background-color:  [[colour_04]];
+	color: [[colour_05]];
+	font-size: x-small; 
+	margin: 2px; 
+	font-weight: bold;
+	padding: 0 4px 0 4px;
+	}
+
+/* Agency footer - appears at the bottom of every public page*/
+
+.OfflineFooter {
+	margin-top:20px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 1.1em;	
+}
+.Footer {
+	margin-top:6px;
+	margin-bottom: 12px;
+	text-align: center;
+	font-size: .75em;
+	}
+.footerLeft {
+	margin-top:6px;
+	margin-bottom: 12px;
+	text-align: left;
+	font-size: .75em;
+	}
+.footerRight {
+	margin-top:6px;
+	margin-bottom: 12px;
+	text-align: right;
+	font-size: .75em;
+	}
+/* VITA Footer - appears at the bottom of every public page*/	
+.VTFooter	{
+	margin-top:6px;
+	margin-bottom: 10px;
+	text-align: right;
+	color: [[colour_20]];
+	font: normal .75em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	}
+
+.VTFooter a:link {
+	color: [[colour_20]];
+}
+.VTFooter a:visited {
+	color: [[colour_20]];
+}
+.VTFooter a:hover {
+	color: [[colour_20]];
+}
+
+/*  Table Center handles layout for Advanced Search and Search Hints */
+.TableCenter {
+	width: auto;
+	border-width: 0;
+	padding: 2px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+	margin-bottom: 8px;
+	}
+
+.TableHeader { 
+	background: url("/glib/tablebg2.png") repeat-y right;
+	font-size: 1.10em;
+	font-weight: bold;
+	color: [[colour_12]];
+	padding: 2px 3px;
+	text-align: left;
+	vertical-align: top;
+	margin-right: 4px;
+	margin-top: 10px;
+	}
+
+/* what follows is an alternative TableHeader which gradients from the Left and finishes with a base Line*/
+
+.TableHeaderL { 
+	background: url("/glib/tablebg3.png") repeat-y left;
+	font-size: 1.10em;
+	font-weight: bold;
+	color: [[colour_12]];
+	padding: 2px 3px;
+	text-align: left;
+	vertical-align: top;
+	margin-right: 4px;
+	margin-top: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: [[colour_12]];
+	border-bottom-width: 1px;
+	}
+
+.TableSubHead {	
+	font-weight: bold;
+	color: [[colour_12]];
+	text-align: left; 
+	font-size: 1.05em;
+	vertical-align: top;
+	text-align: left;
+	font-variant: normal;
+	background: url("/glib/tablesubheadbg.gif") right repeat-x;
+	}
+
+.TableLabel { 
+	background: url("/glib/tablebg2.png") repeat-y right;
+	font-weight: bold;
+	width: 200px;
+	text-align: right;
+	vertical-align: top;
+	padding-right: 6px;
+	margin-left: 2px;
+	border-right: .1em solid [[colour_03]];
+	color: [[colour_12]];
+	font-size: 1em;
+	border-bottom: .1em dotted [[colour_03]];
+	}
+
+.TableData {
+	padding-left: 5px;
+	vertical-align: top;
+	text-align: left;
+	padding-bottom: 3px;
+	padding-right: 5px;
+	}
+
+/* highlight system responses for users submitting Comments including Comment and Detail pages
+and also highlighting search errors on the SearchHints page (when we implement that)
+*/
+.alert{
+  	color: [[colour_08]];
+  	font-weight: bold;
+	}
+/* used to tag the hint next to Mystery, to use the Comment tab*/
+.Help{
+	font-style: italic;
+	font-size: .8em;
+	}
+
+.Inline {
+	display: inline;
+	}
+
+
+/* SEARCH
+ ******************************* 
+styles the center panel on the (simple) search page*/
+.SearchPanel{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+	width: 500px;
+	}
+/* used on Search to define major labels in the SearchPanel
+Also called in SearchWidgets*/
+.SearchHeader{
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: [[colour_03]];
+	padding-top: 15px;
+	text-align: center;		
+	clear: both;
+	}
+/* controls the search form on the Search page
+	  Also used in Results Facet panel for narrowing search*/
+.SearchForm{
+	text-align: center;
+	font-size: 1.3em;
+	}
+/* Button for Search page
+	  and in FacetPanel to narrow search*/
+.SearchGo{
+	color: [[colour_03]];
+	font-size: .5em;
+	}
+.searchLogic {
+	font-size: .8em;
+	bottom: 5px;
+	padding-bottom: 10px;
+	}
+.spellCheck {
+	font-size: .8em;	
+	}
+
+.noResults {
+	margin-bottom: 20px;
+	}
+.SearchList{
+	margin-top:0px;
+	/*margin-bottom:15px;*/
+	}
+.SearchList ul li{
+	vertical-align: middle;
+	list-style-type: disc;
+	}
+.SearchListThumbs ul li{
+	list-style-type: none;
+	margin: 3px;
+	padding-top: 5px;
+	clear: both;
+}
+.SearchListThumbs img {
+	text-decoration: none; 
+	margin: 0px;
+	border: 0px;
+	padding: 5px 5px 5px 0;
+	float: left;
+}	
+.SearchListThumbs img a {
+	text-decoration: none; 
+	margin: 0px;
+	border: 0px;
+	display: block;
+}		
+
+/* left or right sidebar for Search*/
+.RightPanel {
+	width: 300px;
+	margin: 0;
+} 
+.LeftPanel {
+	width: 250px;
+	margin: 0;
+}
+	/* sitenav is used on Search 
+	 and is the recommended style for the right panel that is user defined
+	 Sets the h4 value for Mystery
+	 */
+	.SiteNav { 
+		margin-top: 15px;
+		background-color: [[colour_09]]; 
+		border: 1px solid [[colour_05]];
+		width: 300px;
+	font-size: .8em;
+}
+	
+	.SiteNav a {
+		font-weight: bold;
+		display: block; 
+		padding: 4px 8px; 
+		margin: 0; 
+		text-decoration: none; 
+		color:  [[colour_03]];
+		border-top: 1px solid [[colour_10]];
+}
+	.SiteNav a:hover {
+		background: [[colour_11]];
+	}
+	
+	.SiteNav a:visited {
+		border-top: 1px solid [[colour_10]];
+	}	
+
+	.SiteNav a img {
+		text-decoration: none; 
+		margin: 0px;
+		border: 0px;
+	}
+	.SiteNav a img.iconThumbnailImg{
+		border: 0px;
+		img-align: left;
+		display: inline;
+}
+	.SiteNav div.h4 {
+		background: [[colour_03]];
+		color: [[colour_09]];
+		text-align: center;
+		margin: 0;
+		padding:0.25em 0 0.235em 0;
+	}
+	.SiteNavPages {
+		font-weight: bold;
+		display: block; 
+		padding: 4px 8px; 
+		margin: 0; 
+		text-decoration: none; 
+		border-top: 1px solid [[colour_10]];
+		color:  [[colour_03]];
+	}
+	.SiteNavPages form{
+		display: inline; 
+		padding: 4px 8px; 
+	}
+	
+	.SiteNav p {
+		color: [[colour_12]];
+		margin: 0pt 5px;
+		text-indent: 0;
+		font: italic .9em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	}
+	
+/* Options for Right sidebar on Search Page, 
+should a site choose to use 
+**************************** */
+	.RTsidebar { 
+		margin-top: 15px;
+		background-color: [[colour_09]]; 
+		border: 1px solid [[colour_05]];
+		width: 300px;
+		font-size: .8em;
+}
+	.RTsidebar div.h4 {
+		background: [[colour_03]];
+		color: [[colour_09]];
+		text-align: center;
+		margin: 0;
+		padding:0.25em 0 0.235em 0;
+	}
+	
+	.RTsidebar p {
+		color: [[colour_12]];
+		margin: 0pt 5px;
+		text-indent: 0;
+	}	
+	.RTsidebar a {
+		font-weight: bold;
+		margin: 0; 
+		text-decoration: none; 
+		color:  [[colour_03]];
+}
+	.RTsidebar a:hover {
+		background: [[colour_11]];
+	}
+	.RTsidebar a:visited {
+		border-top: 1px solid [[colour_10]];	
+}
+
+
+/* ADVANCED SEARCH
+ ******************************* */
+.AdvSearchForm{
+	background: url([[background_gradient_01]]) repeat-y center;
+	padding: 8px;
+	width: 85%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.AdvSearchForm div.h5{
+  font-size: .8em;
+  text-indent: 2pt;
+  margin-top: 1px;
+  font-weight: bold;
+  color:  [[colour_03]];
+  display: block;
+  padding-right: 15px;
+}
+ 
+.AdvSearchForm div.h6{
+  font-size: .75em;
+  text-indent: 0pt;
+  margin-top: 1px;
+  font-weight: bold;
+  color:  [[colour_03]];
+  display: inline;
+  } 
+  
+.AdvSearchForm td{
+	text-align: left;
+	vertical-align: top;
+	padding: 0px 0px 0px 0px;
+}
+
+.AdvSrchFormFooter tr{
+	width: 600px;
+ 	margin-bottom: .9em;
+	padding-top: .2em;
+}
+
+.AdvSrchFormFooter td{
+	text-align: center;
+	vertical-align: middle;
+	width:300px;
+}
+/* yes no values in Advanced Search form*/
+.AdvSrchBooleanChoices{
+	display: inline;
+	font-size: .8em;
+	font-weight: bold;
+	color:  [[colour_03]];
+}
+
+
+/* CSS2 version of fieldset with IDs for each of the option bundles on the Advanced Search Form*/
+/*.AdvSrchFieldSet {
+	margin-bottom: .5em;
+	padding-top: .2em;
+	background: [[colour_09]];
+	border: outset [[colour_03]];
+}*/
+
+/* CSS3 version of fieldset with IDs for each of the option bundles on the Advanced Search Form*/
+
+.AdvSrchFieldSet {
+	background-color: [[colour_09]];
+	border-width: 1px;
+	border-style: solid;
+	border-color: [[colour_03]];
+	background-image: none;
+	min-width: 500px;
+	-moz-border-radius: 8px; 
+	-webkit-border-radius: 8px; 
+	border-radius: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	z-index: 1;
+	margin: 10px;
+}
+
+
+/* constrains width of select options in Advanced Search form*/
+.SearchForm250 select{
+	width: 250px;
+}
+
+
+/* RESULTS  and WHAT'S NEW
+ ******************************* */
+/*  the left block of thumbnail, title, description on Results pages */
+
+.ResultPanel{
+	vertical-align: top;
+	margin-top: 15px;
+}
+/* used on Results page to vertically align thumbnails and text; applied to <td>*/
+.ResultsCellTop{
+	vertical-align: top;
+	padding-bottom: 10px;
+}
+/* set of values to deal with results page alignments*/
+/* no border is a hack for IE/FF to turn off link box */
+
+.Thumbnail{
+	text-align: center;
+}
+.Thumbnail a{
+	border: 0px;
+}
+/* used on thumbnails on Results page for lists with thumbnails, 
+and width forced to handle the oversized newpaper thumbs */
+.ThumbnailImg{
+	border: 0px;
+    border-image-repeat: none;
+	border-image-slice: none;
+    border-image-width: none;
+    border-image-outset: none;
+}
+
+
+.docPartsLabel {
+	font-size: .9em;
+	font-weight: bold;
+	font-style: italic;
+}
+.docParts {
+	font-size: .9em;
+	background-color: [[colour_07]];
+	border-width: 1px;
+	border-style: solid;
+	border-color: [[colour_03]];
+	background-image: none;
+	width: 380px;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	border-radius: 6px;
+	padding-bottom: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+	z-index: 1;
+	margin: 3px;
+}
+.docPart {
+	display: inline-block;
+	padding-left: 8px;
+}
+.docPart a:hover {
+	background:[[colour_13]];
+	font-weight: bold;
+}
+
+.pagePartsLabel {
+	font-size: .9em;
+	font-weight: bold;
+	font-style: italic;
+	display: inline;
+}
+.pageParts {
+	font-size: .9em;
+}
+.pagePart {
+	display: inline;
+	padding-left: 8px;
+}
+.pagePart a:hover {
+	background:[[colour_13]];
+	font-weight: bold;
+}
+
+.pageSearchResults {
+	font-size: .8em;
+	display: inline;
+	padding-left: 8px;
+}
+.pageSearchResults a:hover {
+	background:[[colour_13]];
+	font-weight: bold;
+}
+.docPartAll {
+	display: inline;
+	padding-left: 25px;
+	font: .75em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.docPartAll a:hover {
+	background:[[colour_13]];
+	font-weight: bold;
+}
+
+
+/* ******************* */
+
+
+.ResultTitle{
+	font-weight: bold;
+}
+.Description{
+	font-size: .75em;
+	width: 425px;
+}
+div.highlightImg img{
+	padding: 3px 5px 5px 12px;
+}
+.ResultsMystery{
+	color:  [[colour_08]];
+	font-size: .9em;
+}
+/* Results page: facet panel*/
+.FacetPanel{
+	vertical-align: top;
+	background-color: [[colour_07]]; 
+	width: 400px;
+	padding: 0px;
+	float: right;
+}
+.FacetPanel div.h4 {
+	font-size: 0.95em;
+	background: [[colour_03]];
+	color: [[colour_09]];
+	margin:0 0 10px;
+	padding:0.25em 0 0.235em;
+	text-align: center;
+}
+.FacetPanel a { 
+	margin: 0; 
+	text-decoration: none;
+	padding-left: 4px;
+	font-size: .85em;
+}
+
+.FacetPanelContent{
+}
+.FacetPanelContent a {
+	display: block; 
+	padding: 4px 8px; 
+	margin: 0; 
+	text-decoration: none; 
+	border-bottom: 1px solid [[colour_03]];
+	font-size: .85em;
+}
+.FacetPanelContent a img {
+	padding-left: 5px;
+}
+.FacetPanelContent a:hover {
+	background: [[colour_11]];
+}
+.FacetPanelSearchBox {
+	margin: 2px 2px 2px 8px;
+}
+.sortOptions{
+	padding: 4px 8px;
+	font-size: .8em;
+}
+.MapInstructions{
+	padding: 4px 8px;
+	font-size: .8em;
+}
+/* used on Results page, in group results for Group Title
+and in SearchHelp
+*/
+.contentTitle{
+	color: [[colour_03]];
+	font-weight: bold;
+	font-size: 1.35em;
+}
+.ContentTitle{
+	color: [[colour_03]];
+	font-weight: bold;
+	font-size: 1.35em;
+}
+.contentSubTitle{
+	color: [[colour_03]];
+	font-weight: bold;
+	font-size: 1em;
+	padding-top:10px;
+}
+.ContentSubTitle{
+	color: [[colour_03]];
+	font-weight: bold;
+	font-size: 1em;
+	padding-top:10px;
+}
+/* used on Results page, in group results for Group abstract*/
+.contentText{
+	font-size: 1em;
+}
+.ContentText{
+	font-size: 1em;
+}
+/* tagclouds:  Results/Whats New/Browse by Subject*/
+.tagcloud {
+	line-height: 1.4em;
+	padding-top: 2px;
+	padding-right: 2px;	
+}
+.tagcloud a:link {
+  text-decoration: none;
+}
+.tagcloud a:visited {
+  text-decoration: none;
+}
+.tagcloud a:hover {
+  text-decoration: underline;
+	background: [[colour_11]];
+}
+.tagcloud a:active {
+  text-decoration: none;
+}
+.subthreshold {display: none;}
+
+
+/* subject controls: list rendered as horizontal tab bar */
+/* adapted from http://css.maxdesign.com.au/listamatic/horizontal19.htm */
+
+#subjects{
+	padding-top: 15px;
+}
+
+#subject-controls
+{
+margin-left: auto;
+margin-right: auto;
+z-index: 1;
+}
+
+#subject-controls ul
+{
+list-style-type: none;
+text-align: center;
+margin-top: -8px;
+padding: 0;
+position: relative;
+z-index: 2;
+}
+
+#subject-controls li
+{
+display: inline;
+text-align: center;
+margin: 0 5px;
+}
+
+#subject-controls li a
+{
+padding: 1px 7px;
+color: [[colour_03]];
+background-color: [[colour_09]];
+border: 1px solid [[colour_14]];
+text-decoration: none;
+}
+
+#subject-controls li a:hover
+{
+color: [[colour_15]];
+border: 1px solid [[colour_03]];
+border-top: 2px solid [[colour_03]];
+border-bottom: 2px solid [[colour_03]];
+}
+
+#subject-controls li a#current
+{
+color: [[colour_15]];
+border: 1px solid [[colour_03]];
+border-top: 2px solid [[colour_03]];
+border-bottom: 2px solid [[colour_03]];
+}
+
+/* No Bullets Unordered Lists 
+************************************************** */
+			ul.noBullets {
+				margin: -.3em 0;
+				padding: 0 0 0 1em;
+				list-style: none;
+				font-size:0.8em;
+				line-height: 100%;
+				list-style-image: none;
+}
+			ul.noBullets li {
+				padding: 0 0 .6em 0;
+				margin: 0;
+				}
+			ul.noBullets li a {
+				}
+				
+
+
+/* OPTIONS (moved over from OurOntHeader.css)
+************************************************** */
+			ul.options {
+				margin: -.3em 0;
+				padding: 0 0 0 1em;
+				list-style: none;
+				font-size: 0.9em;
+				}
+			ul.options li {
+				padding: 0 0 .6em 0;
+				margin: 0;
+				}
+			ul.options li a {
+				font-size: .9em;
+				
+				}
+			ul.options li a img {
+				text-decoration: none;
+				border-width: 0;
+				list-style: none;
+				}
+				
+/* OPTION-TYPE (moved over from OurOntHeader.css to standardize the facet panel)
+************************************************** */
+li.option-type-audio {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_audio.jpg") no-repeat;
+				}
+li.option-type-video {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_video.jpg") no-repeat;
+				}
+li.option-type-text {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_text.jpg") no-repeat;
+}
+li.option-type-object {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_object.jpg") no-repeat;
+				}
+li.option-type-images {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_images.jpg") no-repeat;
+				}
+li.option-type-collection {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_collection.jpg") no-repeat;
+				}	
+li.option-type-website {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_website.jpg") no-repeat;
+				}	
+li.option-type-genealogy {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_genealogy.jpg") no-repeat;
+				}	
+li.option-type-newspaper {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_newspaper.jpg") no-repeat;
+				}
+li.option-type-publication {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_publication.jpg") no-repeat;
+				}	
+				
+/* PAGINATION
+************************************************** */
+.Pagination {
+	padding: 5px;
+	display: inline;
+	font-size: .8em;
+}
+	/* links, larger other than current page*/
+.Pagination a {
+	border: 1px solid [[colour_11]];
+	padding-right: 3px;
+	padding-left: 3px;
+}
+.Pagination a:hover {
+	border: 1px solid [[colour_05]];
+	text-decoration: none;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+/* defines the current page*/
+
+.Pagination big {
+	font-size: .9em;
+	font-weight: bold;
+	color: [[colour_17]];
+	border: 1px solid [[colour_05]];
+	}
+
+.current {
+	font-size: .9em;
+	font-weight: bold;
+	color: [[colour_17]];
+	padding: 3px 8px;
+	border: 1px solid [[colour_18]];
+	display: inline;
+}
+
+.Pagination span {
+	font-size: .9em;
+	color: [[colour_04]];
+	display: inline;
+}
+
+.FloatLeft {
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-right: 1px solid [[colour_03]];
+	padding-right: 5px;
+}
+.FloatRight {
+	float: right;
+	margin-right: 20px;
+}
+
+/* LEGEND - used with zoomify presentation */
+
+.Legend {
+	font-variant: normal;
+	font-size: 1em;
+	border-left: 1px solid [[colour_03]];
+	background: [[colour_19]] url(/glib/tablebg3.png) repeat-y left;
+	padding: 25px 15px 55px 20px;
+}
+
+/* PANZOOM view
+ ******************************* */
+
+#pageContent {
+  	width: 95%;
+  	margin: 5px;
+	vertical-align: top;
+} 
+	
+#panzoomView{
+	list-style-type: none;
+	list-style-image: none;
+	padding: 2px 0;
+	margin: 0;
+	vertical-align: top;
+}
+section { 
+	text-align: center; margin: 50px 0;
+	background-color: #f0f0f0;
+	height: 100%;
+	width: 100%;
+}
+.buttons { 
+	margin: 40px 0 0;
+}
+input.zoom-range {
+	vertical-align: middle;
+}
+
+.parent{
+	top: 0px;
+	left: 0px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	vertical-align: top;
+	position: relative;
+}
+.panzoom{
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	vertical-align: top;
+}
+
+#newspage {
+	top: 0px;
+	left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#newspage img{
+	top: 0px;
+	left: 0px;
+	border: 1px solid #797979;
+}
+
+
+
+/* DETAILS
+ ******************************* */
+.DetailsPanel{
+	width: 100%;
+}
+
+.detailsImage {
+	float: right;
+	padding-right: 5px;
+}
+
+.detailsMenu{
+	vertical-align: top;
+	width: 401px;
+	padding: 0px;
+	margin-top: 15px;
+	background-color: [[colour_09]]; 
+	border: 1px solid [[colour_20]];
+	float: right;
+}
+
+.detailsMenu a {
+		font-weight: bold;
+		vertical-align: middle;
+		display: block; 
+		padding: 4px 8px; 
+		margin: 0; 
+		text-decoration: none; 
+		color:  [[colour_03]];
+		border-top: 1px solid [[colour_10]];
+}
+		
+.detailsMenu a:hover {
+		background: [[colour_11]];
+	}
+
+.detailsMenu a:visited {
+		border-top: 1px solid [[colour_10]];
+	}
+
+.detailsMenu a img {
+		text-decoration: none; 
+		margin: 0px;
+		border: 0px;
+}
+.detailsMenu div.h4 {
+		background: [[colour_03]];
+		color: [[colour_09]];
+		text-align: center;
+		margin: 0;
+		padding:0.25em 0 0.235em 0;
+	}
+
+.detailsMenuPages {
+		display: inline-block; 
+		background: url(/glib/tablebg3.png) repeat-y left;
+	}
+.detailsMenuPages form{
+		display: inline;
+	padding-bottom: 4px;
+	padding-right: 8px;
+}
+
+.detailsSponsors {
+	color: [[colour_21]];
+	font-size: .8em;
+	font-style: italic;
+}
+
+.fulltext {
+	border-top: 1px solid [[colour_14]];
+	padding: 8px;
+	font-size: .9em;
+	text-align: justify;
+}
+
+/* DETAILS NARROW - slimmed to give large videos more space
+ ******************************* */
+.DetailsPanel{
+}
+
+.detailImage {
+	float: right;
+}
+
+.detailsNarrowMenu{
+	vertical-align: top;
+	width: 250px;
+	padding: 0px;
+	margin-top: 15px;
+	background-color: [[colour_09]]; 
+	border: 1px solid [[colour_20]];
+	float: right;
+}
+
+.detailsNarrowMenu a {
+		font-weight: bold;
+		display: block; 
+		margin: 0; 
+		text-decoration: none; 
+		color:  [[colour_03]];
+		border-top: 1px solid [[colour_10]];
+	padding: 4px 8px;
+}
+		
+.detailsNarrowMenu a:hover {
+		background: [[colour_11]];
+	}
+.detailsNarrowMenu a img {
+		text-decoration: none; 
+		margin: 0px;
+		border: 0px;
+	}
+.detailsNarrowMenu div.h4 {
+		background: [[colour_03]];
+		color: [[colour_09]];
+		text-align: center;
+		margin: 0;
+		padding:0.25em 0 0.235em 0;
+	}
+
+.detailsNarrowMenuPages {
+		display: inline-block; 
+		background: url(/glib/tablebg3.png) repeat-y left;
+	}
+.detailsNarrowMenuPages form{
+		display: inline;
+	padding-bottom: 4px;
+	padding-right: 8px;
+}
+
+
+/* style to emphasize record title on Details page*/
+.RecordTitle {
+	font-weight: bold;
+	margin: 0 0 10px 0;
+	font-size: 1.2em;
+}
+/* mystery label and question in Details display */
+.Mystery{
+  color:  [[colour_08]];
+}
+/* defines tab styles on Details page for metadata and comments*/
+.DetailsCurrentTab{
+	display: inline;
+	text-align: center;
+	font-weight: bold;
+	border-width: 1px;
+	border-style: solid;
+	border-color: [[colour_03]];
+	text-decoration: none;
+	margin-left: 30px;
+	border-bottom: none; 
+	background-color: [[colour_09]];
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	z-index: -1;
+}
+.DetailsAlternateTab{
+	display: inline;
+	text-align: center;
+	font-weight: normal;
+	border-width: 1px;
+	border-style: solid;
+	border-color: [[colour_05]];
+	border-bottom: none; 
+	text-decoration: none;
+	margin-left: 30px;
+	background-color: [[colour_05]];
+	color: [[colour_09]];
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	z-index: -2;
+}
+
+.DetailsAlternateTab a{
+	color: [[colour_15]];
+	font-weight: normal;
+}
+.DetailsAlternateTab :hover {
+	background: [[colour_09]];
+	color:  [[colour_05]];
+}
+.DetailsAlternateTab a {
+	color:  [[colour_09]];
+	text-decoration: none;
+}
+/* handles metadata layout on left side of Details pages*/
+
+.DetailsDL{
+	background: url(/glib/tablebg3.png) repeat-y left;
+	padding: 15px 5px 20px 0;
+	/*border-left-style: solid;
+	border-left-color: [[colour_03]];
+	border-left-width: 1px;*/
+	width: 100%;
+}
+
+.detailsGallery {
+	background-color: [[colour_09]];
+	background-image: none;
+
+	padding: 10px 2px;
+	border-top: 1px solid [[colour_03]];
+	min-width: 500px;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+	z-index: 1;
+}
+.galleryPictureFlow {
+	display: inline;
+	float: left; 
+	text-decoration: none;
+	margin: 5px 4px 5px 2px;
+} 
+
+.galleryPictureFlow.galleryPictureFlowCell {
+	display: inline;
+	float: left;
+	background-color: #FAFAFA;
+	height:220px; 
+	text-decoration: none;
+        padding-top: 0px;
+  	padding-right: 5px;
+  	padding-bottom: 5px;
+  	padding-left: 0px;
+	margin-bottom: 5px;
+  	margin-right: 5px; 	
+  	border-right: 1px solid #eaeaea;
+  	border-bottom: 1px solid #eaeaea;
+	-moz-border-radius: 8px; 
+	-webkit-border-radius: 8px; 
+	border-radius: 8px;
+	box-shadow: #eeeded;
+}
+
+.galleryPictureFlow img {
+	border: 0;
+    padding: 0;
+}
+
+.galleryPictureFlowCaption {
+	font-size: .7em;
+	text-decoration: none;
+    padding: 0;
+	max-width: 180px;
+}
+
+.galleryVideo {
+	padding: 15px 0;
+	margin: 0 auto;
+	z-index: 1;
+}
+.detailsDisplay {
+	background-color: [[colour_09]];;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-image: none;
+	border: 1px solid [[colour_03]];
+	min-width: 500px;
+	margin: 0 20px 20px;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border-radius: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	z-index: 1;
+}
+.detailsDisplay dt {
+	font-weight: bold;
+	margin-top: 6px;
+	text-align: left;
+}
+.detailsDisplay dd {
+	margin-left: 12px;
+}
+
+.pageSearchBlock {
+	display: inline;
+	font-size: .95em;
+	padding-bottom: 10px;
+	font-weight: bold;
+	color: [[colour_03]];
+}
+.pageSearchBlock form{
+	background: url(/glib/tablebg3.png) repeat-y left;
+	display: inline;
+}
+
+.pageSearchBlock form label {
+	color: [[colour_12]];
+	}
+
+.issueNavBar {
+	font-size: .8em;
+	padding: 2px;
+	border-top-color: [[colour_16]];
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-left-color: [[colour_16]];
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-bottom-color: [[colour_14]];
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-right-color: [[colour_14]];
+	border-right-style: solid;
+	border-right-width: 1px;
+	text-align: center;
+	margin-top: 4px;
+}
+
+/* Newspaper Calendar 
+********************************* */
+
+div.issueYears {
+	padding: 10px 30px;
+}
+
+div.issueYears label {
+	color: [[colour_21]];
+	display: inline;
+}
+
+div.issueYears .labelTitle {
+	color: [[colour_21]];
+	font-weight: bold;
+	display: inline;
+	font-variant: small-caps;
+}
+
+div#calendar {
+	align: center;
+}
+div#calendar table {
+	text-align: center;
+	vertical-align: middle;
+
+}
+div#calendar table tr.calendar_row td.calendar_month {
+    text-align: center;
+	vertical-align: top;
+	padding-right: 4px;
+	padding-left: 4px;
+
+}
+div#calendar table tr.calendar_row td.calendar_month table {
+	width: 180px;
+	background: [[colour_19]];
+    text-align: center;	
+	padding: 4px;
+	border-right: 1px solid [[colour_03]];
+	border-bottom: 1px solid [[colour_03]];
+
+}
+
+div#calendar table tr.calendar_row td.calendar_month table.month td.title {
+	font-weight: bold;
+	color: [[colour_21]];
+	font-size: 1.1em;
+	font-variant: small-caps;
+	background-color: [[colour_11]];
+	border-bottom: 1px solid [[colour_03]];
+}
+div#calendar table tr.calendar_row td.calendar_month table.month td.dayname {
+	font-weight: bold;
+	color: [[colour_21]];
+	font-size: .9em;
+	padding: 2px;
+}
+div#calendar table tr.calendar_row td.calendar_month table td{
+    text-align: center;
+	border: 1px solid [[colour_11]];
+	font-size: .8em;
+	color: [[colour_04]];
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+div#calendar table tr.calendar_row td.calendar_month table td a {
+	font-weight: bold;
+}
+
+/* Newpaper Hit highlighting 
+*************************** */
+
+#newspage{
+	position: relative;
+}
+.hh{
+	margin: 0;
+	position: absolute;
+	color:transparent;
+	opacity: 0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+	background:#DC143C;
+	z-index: 998;
+}
+
+
+/* Publication Chronology
+*************************** */
+	/* numbered colours in this section are NOT Parameter colours, but default deep blue and grey link colours */
+
+table.pubYearTable {
+	text-align: center;	
+	padding: 2px 5px;
+}
+.pubYearTable caption {
+	color: [[colour_21]];
+	font-size: .9em;
+} 
+.pubYearNull {
+	font-size: .65em;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: [[colour_13]];
+	padding: 2px 2px 2px 1px;
+	margin: 0 auto; 
+}
+.pubYearActive a {
+	color: #15148f;
+	font-size: .7em;
+	font-weight: bold;
+	display: block; 
+    padding: 2px 2px 2px 1px; 
+	margin: 0 auto; 
+	text-decoration: none; 
+	border-top-style: none;
+	border-right: 1px solid [[colour_11]];
+	border-bottom: 1px solid [[colour_11]];
+	background: [[colour_11]];
+}
+.pubYearActive a:hover {
+	border-top-style: none;
+	border-right: 1px solid [[colour_05]];
+	border-bottom: 1px solid [[colour_05]];
+	background: [[colour_11]];
+}
+.pubYearActive a:visited {
+	text-decoration: none; 
+	background: [[colour_19]];
+	border-top-style: none;
+	border-right: 1px solid [[colour_19]];
+	border-bottom: 1px solid [[colour_19]];
+}
+.pubYearCurrent {
+	font-size: .75em;
+	font-weight: bold;
+    padding: 2px 2px 1px 1px;
+	margin: 0 auto; 
+	color: #940606;
+	margin: 0 auto;
+	border: 1px solid [[colour_05]];
+}
+.pubYearCurrent a {
+	
+}
+.pubYearCurrent a:hover {
+	background: [[colour_11]];
+}
+.pubYearCurrent a:visited {
+	
+}
+
+
+/* Facet Panel Content - Years and Decades
+*********************************** */
+
+.decade {
+		font-size: .8em;
+		text-decoration: none;
+		padding: 1px;	
+		text-align: center;
+		margin: 0;
+		color: [[colour_03]];
+		background: [[colour_13]];
+		border-right: 1px solid [[colour_13]];
+		border-bottom: 1px solid [[colour_13]];
+}
+
+.decade a {
+		font-size: .8em;
+		text-decoration: none;	
+		padding: 2px;
+		text-align: center;
+		margin: 0;
+		font-weight: bold;
+		color: #15148f;
+		background: [[colour_09]];
+		border-right: 1px solid [[colour_03]];
+		border-bottom: 1px solid [[colour_03]];
+}
+
+.decade a:hover {
+		background: [[colour_18]];	
+}
+
+.year {
+	font-size: .75em;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: [[colour_18]];
+    padding: 2px 2px 2px 1px;
+    margin: 0 auto; 
+}
+.year a {
+	color: #15148f;
+	font-size: .8em;
+	font-weight: bold;
+	display: block; 
+    padding: 2px 2px 2px 1px; 
+	margin: 0 auto; 
+	text-decoration: none; 
+    border-top-style: none;
+	border-right: 1px solid [[colour_18]];
+	border-bottom: 1px solid [[colour_18]];
+}
+
+.year a:hover {
+    border-top-style: none;
+	border-right: 1px solid #081255;
+	border-bottom: 1px solid #081255;
+	background: [[colour_18]];	
+}
+
+
+
+	
+/*  Add Comments
+*************************** */
+/* instructions for users adding comments in AddComments and incComments*/
+.Instructions{
+	font-weight: bold;
+	background-color: [[colour_11]];
+	border-width: 2px;
+	border-style: solid;
+	border-color: [[colour_05]];
+	padding-right: 10px;
+	padding-left: 10px;
+	vertical-align: top;
+	font-size: .8em;
+}
+
+/*used on Details page with the Comments tab active*/
+.Comments { 
+	background-color: [[colour_09]];
+	border-width: 1px;
+	border-style: solid;
+	border-color: [[colour_03]];
+	background-image: none;
+	min-width: 500px;
+	margin: 0 20px 20px;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border-radius: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	z-index: 1;
+}
+.Comments div.h2 {
+	color: [[colour_21]];
+	font-size: 1.5em;
+	}
+.Comments div.h4 {
+	background: [[colour_09]];
+	color: [[colour_05]];
+	text-align: center;
+	margin: 10px 15px 0 0;
+	padding: 5px 0 10px;
+	font-size: 1.2em;
+}
+.Comments div.h5 {
+	font-weight: bold;
+	margin: 1em 0 1em 0;
+	padding:1em 0 1em 0;
+	border: solid [[colour_05]]; 
+	border-width: 1px 0 0 0;
+}
+
+.Comments p {
+	width: 70%;
+	padding: 5px 20px 20px;
+	font-size: .9em;
+	text-align: left;
+}
+
+.textarea#comment {
+	margin-bottom: 20px;
+}
+
+
+/* Details:  for paragraphing Transcriptions
+*************************** */
+.Transcription p
+{
+	padding-bottom: 5px;
+}
+
+.hidden {
+	visibility: hidden;
+	width: 0;
+}
+
+
+/* PAGE *******(page.asp) ************ */
+.pageTitle{
+	font-size: 1.20em;
+}
+.pageNavBar{
+	background-color: [[colour_07]];
+	font-size: .90em; 
+	text-align: center;
+	display: block;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.pageNavBar img{
+	border:0px;
+	display: inline;
+	padding-bottom: 0;
+	vertical-align: top;
+}
+
+.pageNavBar form{
+	border:0px;
+	display: inline;
+}
+
+.pageNavForm{
+	display: inline; 
+	padding: 0px 4px;
+}
+.pageNavForm form{
+	display: inline; 
+}
+
+/* Clippings - largely superceded by the following multicolumn options */
+
+.clippings {
+	width: 350px;
+	margin-left: 10px;
+	text-align: justify;
+	background-image: url(/glib/BK_oldnewspaper.gif);
+	padding: 25px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.clippings table {
+	width: 100%;
+	margin-left: 5px;
+	font-size: .80em;
+	text-align: left;
+}
+	
+p.pagenum {
+	text-indent: -18px;
+}
+
+.speeches{
+	width:90%;
+	margin-right:auto;
+	margin-left: 10px;
+	text-align: justify;
+	background-image: url(/glib/BK_light_grey_weave2.png);
+	padding: 25px;
+}
+
+/* Clippings-multi-columns */
+.multicol1 {
+	width: 350px;
+	margin-left: 10px;
+	padding: 25px;
+	text-align: justify;
+	background-image: url(/glib/BK_oldnewspaper.gif);
+	font: 12px/1.6em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+		
+	-webkit-column-count: 1;
+	-webkit-column-fill: balance;
+	-webkit-column-gap: 20px;
+	-webkit-column-rule: 1px solid [[colour_20]];
+
+	-moz-column-count: 1;
+	-moz-column-fill: balance;
+	-moz-column-gap: 20px;
+	-moz-column-rule: 1px solid [[colour_20]];
+
+	column-count: 1;
+	column-fill: balance;
+	column-gap: 20px;
+	column-rule: 1px solid [[colour_20]];
+		
+	}
+
+.multicol1 h2 { 
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	column-span: all; 
+	}
+	
+.multicol1 img { 
+	display: block; width: 100%; 
+	}
+
+.multicol2 {
+	width: 660px;
+	margin: auto;
+	padding: 10px;
+	text-align: justify;
+	background-image: url(/glib/BK_oldnewspaper.gif);
+	font: 12px/1.6em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+		
+	-webkit-column-count: 2;
+	-webkit-column-fill: balance;
+	-webkit-column-gap: 15px;
+	-webkit-column-rule: 1px solid [[colour_20]];
+
+	-moz-column-count: 2;
+	-moz-column-fill: balance;
+	-moz-column-gap: 15px;
+	-moz-column-rule: 1px solid [[colour_20]];
+
+	column-count: 2;
+	column-fill: balance;
+	column-gap: 15px;
+	column-rule: 1px solid [[colour_20]];
+		
+	}
+
+.multicol2 h2 { 
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	column-span: all; 
+	}
+	
+.multicol2 img { 
+	display: block; width: 100%; 
+	}
+	
+.multicol2w {
+	width: 700px;
+	margin: auto;
+	padding: 10px;
+	text-align: justify;
+	background-image: url(/glib/BK_oldnewspaper.gif);
+	font: 12px/1.6em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+		
+	-webkit-column-count: 2;
+	-webkit-column-fill: balance;
+	-webkit-column-gap: 15px;
+	-webkit-column-rule: 1px solid [[colour_20]];
+
+	-moz-column-count: 2;
+	-moz-column-fill: balance;
+	-moz-column-gap: 15px;
+	-moz-column-rule: 1px solid [[colour_20]];
+
+	column-count: 2;
+	column-fill: balance;
+	column-gap: 15px;
+	column-rule: 1px solid [[colour_20]];
+		
+	}
+
+.multicol2w h2 { 
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	column-span: all; 
+	}
+	
+.multicol2w img { 
+	display: block; width: 100%; 
+	}	
+
+.multicol3 {
+	width: 760px;
+	margin: auto;
+	padding: 20px;
+	text-align: justify;
+	background-image: url(/glib/BK_oldnewspaper.gif);
+	font: 12px/1.6em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+		
+	-webkit-column-count: 3;
+	-webkit-column-fill: balance;
+	-webkit-column-gap: 15px;
+	-webkit-column-rule: 1px solid [[colour_20]];
+
+	-moz-column-count: 3;
+	-moz-column-fill: balance;
+	-moz-column-gap: 15px;
+	-moz-column-rule: 1px solid [[colour_20]];
+
+	column-count: 3;
+	column-fill: balance;
+	column-gap: 15px;
+	column-rule: 1px solid [[colour_20]];
+		
+	}
+
+.multicol3 h2 { 
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	column-span: all; 
+	}
+	
+.multicol3 img { 
+	display: block; width: 100%; 
+	}
+
+
+/* Tombstones */
+
+.tombstone {
+	width: 425px;
+	margin-left: 15px;
+	margin-right: 15px;
+	background: url(/glib/tombstoneslice-3.gif) repeat-y;
+}
+
+.tombstone p {
+	text-align: justify;
+	padding: 30px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.tombstone table {
+	width: 100%;
+	margin-left: 5px;
+	font-size: .80em;
+	text-align: left;
+}
+
+/* Postcards */
+
+#postcard {
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: url(/glib/tablebg3.png) repeat-y left;
+	border: 1px solid [[colour_03]];
+	min-width: 500px;
+	margin: 0 20px 20px;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border-radius: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+	
+
+
+/*  Mystery CSS slideshow:  only called in search page
+****************************  
+now updated (Feb 2009) to the new version jdGallery v2.1
+
+NOTE: handling of the placement of the image is in the Java Constructs library...  
+see "constructElements in jd.gallery.js" */
+
+
+#myGallery, #myGallerySet, #flickrGallery
+{
+	width: 300px;
+	height: 300px;
+	z-index:5;
+	border: 1px solid [[colour_15]];
+}
+
+.jdGallery a
+{
+	outline:0;
+}
+
+#flickrGallery
+{
+	width: 500px;
+	height: 334px;
+}
+
+#myGallery img.thumbnail, #myGallerySet img.thumbnail
+{
+	display: none;
+}
+
+.jdGallery
+{
+	overflow:hidden;
+	position: relative;
+	border: 1px solid [[colour_05]];
+}
+
+.jdGallery img
+{
+	border: 0;
+	margin: 0;
+}
+
+.jdGallery .slideElement
+{
+	width: 100%;
+	height: 100%;
+	background-color: [[colour_07]];
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.jdGallery .loadingElement
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: [[colour_15]];
+	background-repeat: no-repeat;
+	background-position: center center;
+	/*background-image: url('img/loading-bar-black.gif');*/
+}
+
+.jdGallery .slideInfoZone
+{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	margin: 0px;
+	left: 0;
+	bottom: 0;
+	height: 110px;
+	background: [[colour_06]];
+	color: [[colour_09]];
+	text-indent: 0;
+	overflow: hidden;
+}
+
+* html .jdGallery .slideInfoZone
+{
+	bottom: -1px;
+}
+
+.jdGallery .slideInfoZone h2
+{
+	padding: 0;
+	font-size: .80em;
+	margin: 0;
+	margin: 2px 5px;
+	font-weight: bold;
+	color: inherit;
+}
+
+.jdGallery .slideInfoZone p
+{
+	padding: 0;
+	font-size: .70em;
+	margin: 2px 5px;
+	color: [[colour_16]];
+}
+
+.jdGallery a
+{
+	font-size: 100%;
+	text-decoration: none;
+	color: inherit;
+}
+
+.jdGallery a.right, .jdGallery a.left
+{
+	position: absolute;
+	height: 100%;
+	width: 40%;
+	cursor: pointer;
+	z-index:10;
+	filter:alpha(opacity=20);
+	-moz-opacity:0.2;
+	-khtml-opacity: 0.2;
+	opacity: 0.2;
+}
+
+* html .jdGallery a.right, * html .jdGallery a.left
+{
+	filter:alpha(opacity=50);
+}
+
+.jdGallery a.right:hover, .jdGallery a.left:hover
+{
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+.jdGallery a.left
+{
+	left: 0;
+	top: 0;
+	background: url('img/fleche1.png') no-repeat center left;
+}
+
+* html .jdGallery a.left { background: url('img/fleche1.gif') no-repeat center left; }
+
+.jdGallery a.right
+{
+	right: 0;
+	top: 0;
+	background: url('img/fleche2.png') no-repeat center right;
+}
+
+* html .jdGallery a.right { background: url('img/fleche2.gif') no-repeat center right; }
+
+.jdGallery a.open
+{
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.withArrows a.open
+{
+	position: absolute;
+	top: 0;
+	left: 25%;
+	height: 99%;
+	width: 50%;
+	cursor: pointer;
+	z-index: 10;
+	background: none;
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+.withArrows a.open:hover { background: url('img/open.png') no-repeat center center; }
+
+* html .withArrows a.open:hover { background: url('img/open.gif') no-repeat center center;
+	filter:alpha(opacity=80); }
+	
+/* Clearfix 
+(clears all floats, so that page can resume below)
+************************************************** */
+
+.clearfix {
+		display: block;
+		height: 0;
+		clear: both;
+		float: none;
+}
+* html .clearfix {
+		height: 1%;
+		clear: both;
+		float: none;
+}
