@@ -1,9 +1,6 @@
-/* modified Vita 4.2.3 Public CSS file  for the default WIDE, unconstrained view, with a coloured page background option turned on in line 10 */
-/* COLOUR VARIABLE parameters*/
-/* multi-column clippings*/
-/* hit highlighting */
-/* standard elements*/
-/*panzoom views*/
+/* modified Vita 5.1 Public CSS file  for the default WIDE, unconstrained view, with a coloured page background option turned on in line 10 */
+/* COLOUR VARIABLE parameters, multi-column clippings, hit highlighting, standard elements, pan zoom views, jQuery upload & multiGeo & Contribute & MyFavourites & JP2  & Fieldsets for Ships*/
+
 
 body{
   font-family: Lucida Grande, Geneva, Verdana, Arial, sans-serif;
@@ -38,7 +35,7 @@ a img{
 a:link, a:visited, a:hover {
 	text-decoration: none;
 }
-table, tbody, tr, td{ margin: 1em 0; }
+table, tbody, tr, td{ margin: 3px 0; }
 
 .width50 {
 	width: 50%;
@@ -62,19 +59,21 @@ table, tbody, tr, td{ margin: 1em 0; }
 	display: block;
 	font-size: 1.15em;
 	}
-/* Navbar
-		styles breadcrumb menu on most public pages*/
-	.NavBar {
-		display: block;
-		/*font-weight: bold;*/
-		margin-top:6px;
-		margin-bottom: 6px;
-		border: solid [[colour_04]]; 
-		border-width: 2px 0;
-		color:  [[colour_05]];
-		height: auto;
-		font-size: .8em;
+
+/* Navbar styles breadcrumb menu on most public pages*/
+
+.NavBar {
+	display: block;
+	/*font-weight: bold;*/
+	margin-top:6px;
+	margin-bottom: 6px;
+	border: solid [[colour_04]]; 
+	border-width: 2px 0;
+	color:  [[colour_05]];
+	height: auto;
+	font-size: .8em;
 	}
+
 .NavBar a {
 	margin: 0; 
 	text-decoration: none; 
@@ -83,6 +82,7 @@ table, tbody, tr, td{ margin: 1em 0; }
 .NavBar form{
 	display: inline;
 	}
+
 .NavBar form input{
 	margin: 2px;
 	}
@@ -90,17 +90,25 @@ table, tbody, tr, td{ margin: 1em 0; }
 form .Inline {
 	display: inline;
 	}
+
 form .label {
 	}
 	
-	.NavBarButtonSubmit{
-		background-color: [[colour_04]];
-		color: [[colour_02]];
-		font-size: x-small; 
-		margin: 2px; 
-		font-weight: bold;
-		padding: 0 4px 0 4px;
+.NavBarButtonSubmit{
+	background-color: [[colour_04]];
+	color: [[colour_02]];
+	font-size: x-small; 
+	margin: 2px; 
+	font-weight: bold;
+	padding: 0 4px 0 4px;
+	display: inline;
 	}
+
+.NavBar input#user_login, input#user_logoff, input#user_collections, input#user_collect {
+	float: right;
+	display: inline;
+}
+
 
 /* Agency footer - appears at the bottom of every public page*/
 
@@ -154,7 +162,7 @@ form .label {
 	padding: 2px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top: 20px;
+	margin-top: 5px;
 	margin-bottom: 8px;
 	}
 
@@ -220,8 +228,7 @@ form .label {
 	padding-right: 5px;
 	}
 
-/* highlight system responses for users submitting Comments including Comment and Detail pages
-and also highlighting search errors on the SearchHints page (when we implement that)
+/* highlight system responses for users submitting Comments including Comment and Detail pages and also highlighting search errors on the SearchHints page 
 */
 .alert{
   	color: [[colour_08]];
@@ -430,7 +437,6 @@ should a site choose to use
 /* ADVANCED SEARCH
  ******************************* */
 .AdvSearchForm{
-	background: url([[background_gradient_01]]) repeat-y center;
 	padding: 8px;
 	width: 75%;
 	text-align: center;
@@ -547,6 +553,7 @@ and width forced to handle the oversized newpaper thumbs */
     border-image-width: none;
     border-image-outset: none;
 }
+
 .docPartsLabel {
 	font-size: .9em;
 	font-weight: bold;
@@ -650,9 +657,9 @@ div.highlightImg img{
 	text-align: center;
 }
 .FacetPanel a { 
-	margin: 0; 
+	margin: 0 0 0 2px; 
 	text-decoration: none;
-	padding-left: 4px;
+	padding-left: 2px;
 	font-size: .85em;
 }
 
@@ -660,7 +667,7 @@ div.highlightImg img{
 }
 .FacetPanelContent a {
 	display: block; 
-	padding: 4px 8px; 
+	padding: 4px 6px; 
 	margin: 0; 
 	text-decoration: none; 
 	border-bottom: 1px solid [[colour_03]];
@@ -835,47 +842,65 @@ border-bottom: 2px solid [[colour_03]];
 				}
 				
 /* OPTION-TYPE (moved over from OurOntHeader.css to standardize the facet panel)
-************************************************** */
+************************************************** */	
 li.option-type-audio {
 	padding-left: 22px !important;
 	background: transparent url("/glib/icon_audio.jpg") no-repeat;
-				}
+	}
 li.option-type-video {
 	padding-left: 22px !important;
 	background: transparent url("/glib/icon_video.jpg") no-repeat;
-				}
+	}
 li.option-type-text {
 	padding-left: 22px !important;
 	background: transparent url("/glib/icon_text.jpg") no-repeat;
-}
+	}
 li.option-type-object {
 	padding-left: 22px !important;
 	background: transparent url("/glib/icon_object.jpg") no-repeat;
-				}
+	}
 li.option-type-images {
 	padding-left: 22px !important;
 	background: transparent url("/glib/icon_images.jpg") no-repeat;
-				}
+	}
 li.option-type-collection {
 	padding-left: 22px !important;
 	background: transparent url("/glib/icon_collection.jpg") no-repeat;
-				}	
+	}			
 li.option-type-website {
 	padding-left: 22px !important;
 	background: transparent url("/glib/icon_website.jpg") no-repeat;
-				}	
+	}						
 li.option-type-genealogy {
 	padding-left: 22px !important;
 	background: transparent url("/glib/icon_genealogy.jpg") no-repeat;
-				}	
+	}	
 li.option-type-newspaper {
 	padding-left: 22px !important;
 	background: transparent url("/glib/icon_newspaper.jpg") no-repeat;
-				}
+	}					
 li.option-type-publication {
 	padding-left: 22px !important;
 	background: transparent url("/glib/icon_publication.jpg") no-repeat;
-				}	
+	}			
+li.option-type-group {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_group.gif") no-repeat;
+	}			
+li.option-type-place {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_place.jpg") no-repeat;
+	}				
+li.option-type-exhibit {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_exhibit.jpg") no-repeat;
+	}		
+li.option-type-ship {
+	padding-left: 22px !important;
+	background: transparent url("/glib/icon_ship.jpg") no-repeat;
+	}		
+
+
 				
 /* PAGINATION
 ************************************************** */
@@ -933,15 +958,26 @@ li.option-type-publication {
 	margin-right: 20px;
 }
 
-/* LEGEND - used with zoomify presentation */
+/* LEGEND - used with zoomify, JPEG2000 and SID presentations 
+  ****************************************** */
 
 .Legend {
 	font-variant: normal;
+	display: inline;
 	font-size: 1em;
-	border-left: 1px solid [[colour_16]];
-	background: [[colour_19]] url(/glib/tablebg3.png) repeat-y left;
-	padding: 25px 15px 55px 20px;
+	margin-bottom: 15px;
+	clear: both;
 }
+
+.Legend a {
+	border-bottom: 1px solid #c0c0c0;
+	border-right: 1px solid #797979;
+	padding-right: 8px;
+	padding-left: 8px;
+	margin-right: 10px;
+        box-shadow: 2px 2px 2px rgba(37,67,99,0.62);
+}
+
 
 /* PANZOOM view
  ******************************* */
@@ -968,6 +1004,7 @@ section {
 .buttons { 
 	margin: 40px 0 0;
 }
+
 input.zoom-range {
 	vertical-align: middle;
 }
@@ -987,6 +1024,7 @@ input.zoom-range {
 	height: 100%;
 	width: 100%;
 	vertical-align: top;
+	text-align: left;
 }
 
 #newspage {
@@ -1002,6 +1040,63 @@ input.zoom-range {
 	border: 1px solid #797979;
 }
 
+.fullImageCaption {
+	margin-left: 5px;
+	margin-bottom: 10px;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+.fullImageTitle {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.fullImageDescription, .fullImageSource, .fullImagePhotographer {
+	font-size: .8em;
+	text-indent: 5px;
+}
+
+/* ABOUT pages (for sites which have them)
+ ******************************* */
+.AboutContentPanel{
+	margin-left: 30px;
+	margin-right: 25px;
+	margin-top: 15px;
+	width: 100%;
+	padding: 15px;
+}
+
+/* GEOgraphic Coverage
+ ******************************* */
+
+.detailsDisplay dl dd ul {
+	margin-left: -25px;
+}
+
+li.geoLI {
+	list-style-image: url(/glib/icon_marker2Pin20.gif);
+	text-indent: -5px;
+}
+
+li.geoLI .Subject {
+	font-weight: bold;
+	font-size: .9em;
+	margin-top: 5px;
+}
+
+li.geoLI .Subject a {
+	text-decoration: none;
+}
+
+li.geoLI .hint {
+	font-size: .8em;
+	margin-bottom: 8px;
+}
+
+li.geoLI .hint .geo {
+	display: inline;
+}
 
 
 /* DETAILS
@@ -1059,12 +1154,12 @@ input.zoom-range {
 
 .detailsMenuPages {
 		display: inline-block; 
-		background: url(/glib/tablebg3.png) repeat-y left;
+		/*background: url(/glib/tablebg3.png) repeat-y left;*/
 	}
 .detailsMenuPages form{
 		display: inline;
 	padding-bottom: 4px;
-	padding-right: 8px;
+	padding-right: 3px;
 }
 
 .detailsSponsors {
@@ -1127,12 +1222,12 @@ input.zoom-range {
 
 .detailsNarrowMenuPages {
 		display: inline-block; 
-		background: url(/glib/tablebg3.png) repeat-y left;
+		/*background: url(/glib/tablebg3.png) repeat-y left;*/
 	}
 .detailsNarrowMenuPages form{
 		display: inline;
 	padding-bottom: 4px;
-	padding-right: 8px;
+	padding-right: 3px;
 }
 
 
@@ -1157,7 +1252,7 @@ input.zoom-range {
 	text-decoration: none;
 	margin-left: 30px;
 	border-bottom: none; 
-	background-color: [[colour_02]];
+	background-color: #ffffff;
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px; 
 	border-radius: 5px;
@@ -1202,7 +1297,7 @@ input.zoom-range {
 /* handles metadata layout on left side of Details pages*/
 
 .DetailsDL{
-	background: url(/glib/tablebg3.png) repeat-y left;
+	/*background: url(/glib/tablebg3.png) repeat-y left;*/
 	padding: 15px 5px 20px 0;
 	/*border-left-style: solid;
 	border-left-color: [[colour_16]];
@@ -1211,17 +1306,18 @@ input.zoom-range {
 }
 
 .detailsGallery {
-	background-color: [[colour_01]];
+	background-color: #ffffff;
 	background-image: none;
-
 	padding: 10px 2px;
 	border-top: 1px solid [[colour_18]];
 	min-width: 500px;
+	height: 100%;
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px; 
 	border-radius: 5px;
 	z-index: 1;
 }
+
 .galleryPictureFlow {
 	display: inline;
 	float: left; 
@@ -1260,14 +1356,13 @@ input.zoom-range {
     padding: 0;
 	max-width: 180px;
 }
-
 .galleryVideo {
 	padding: 15px 0;
 	margin: 0 auto;
 	z-index: 1;
 }
 .detailsDisplay {
-	background-color: [[colour_01]];
+	background-color: #ffffff;
 	padding-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -1294,13 +1389,13 @@ input.zoom-range {
 
 .pageSearchBlock {
 	display: inline;
-	font-size: .95em;
+	font-size: .9em;
 	padding-bottom: 10px;
 	font-weight: bold;
 	color: [[colour_16]];
 }
 .pageSearchBlock form{
-	background: url(/glib/tablebg3.png) repeat-y left;
+	/*background: url(/glib/tablebg3.png) repeat-y left;*/
 	display: inline;
 }
 
@@ -1499,7 +1594,7 @@ table.pubYearTable {
 .decade a {
 		font-size: .8em;
 		text-decoration: none;	
-		padding: 2px;
+		padding: 1px;
 		text-align: center;
 		margin: 0;
 		font-weight: bold;
@@ -1510,7 +1605,7 @@ table.pubYearTable {
 }
 
 .decade a:hover {
-		background: [[colour_18]];	
+	background: [[colour_18]];	
 }
 
 .year {
@@ -1519,15 +1614,15 @@ table.pubYearTable {
 	font-style: normal;
 	text-decoration: none;
 	color: [[colour_18]];
-    padding: 2px 2px 2px 1px;
-    margin: 0 auto; 
+    margin: 0 auto;
+	padding: 2px 1px;
 }
 .year a {
 	color: #15148f;
 	font-size: .8em;
 	font-weight: bold;
 	display: block; 
-    padding: 2px 2px 2px 1px; 
+	padding: 2px 1px;
 	margin: 0 auto; 
 	text-decoration: none; 
     border-top-style: none;
@@ -1541,8 +1636,6 @@ table.pubYearTable {
 	border-bottom: 1px solid #081255;
 	background: [[colour_18]];	
 }
-
-
 
 	
 /*  Add Comments
@@ -2063,6 +2156,226 @@ see "constructElements in jd.gallery.js" */
 
 * html .withArrows a.open:hover { background: url('img/open.gif') no-repeat center center;
 	filter:alpha(opacity=80); }
+
+/* Fieldset layout for Ships Data 
+************************************************** */
+
+dt {
+	font-weight: bold;
+}
+
+fieldset {
+	border: 1px solid #CCCCCC;
+	background: #EEEEEE url("/glib/easyform_bg.png") repeat-x;
+	padding: 5px 10px 0;
+	margin: 5px 0 25px;
+}
+fieldset legend {
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #ffffff;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+fieldset dl dt {
+	font-weight: bold;
+	padding-top: 8px;
+}
+
+fieldset p {
+	text-indent: -10px;
+	padding-bottom: 6px;
+}
+
+fieldset#history {
+	padding-bottom: 30px;
+	padding-top: 25px;
+	padding-left: 65px;
+}
+fieldset#history legend {
+	margin-left: -55px;
+}
+
+/* Contribute Module 
+************************************************** */
+
+#container {
+    position: relative;
+    width: 95%;
+    min-width: 760px;
+	padding: 10px;
+	border-radius:25px;
+	border-left: 1px solid #385f8a;
+	margin-right: 15px;
+	margin-left: 15px;
+	background-color: #ffffff;
+	margin-top: 5px;
+	box-shadow: 5px 5px 5px #eeeded;
+}
+
+
+/* BANNER */
+
+#banner{
+	min-height: 100px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#branding h1{
+	padding: 10px;
+	color: #385f8a;
+	margin-top: 15px;
+	margin-right: 75px;
+}
+
+.fieldWrapper label {
+	color: #385f8a;
+}
+.upload_confirm {
+       margin-bottom: 10px;
+}
+
+.upload_intro {
+	font-weight: normal;
+	font-style: normal;
+	padding-right: 50px;
+	padding-left: 30px;
+	text-align: left;
+	line-height: 1.1em;
+	text-indent: 0;
+	margin-right: 10px;
+}
+
+.upload_terms {
+	margin: 8px 35px 42px;
+	border-top: 1px solid #b4c3bd;
+	border-bottom: 1px solid #b4c3bd;
+	border-radius:5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#call_terms_statement {
+	font-weight: bold;
+	color: #005392;
+}
+
+#terms_statement {
+	border-radius:15px;
+	border-left: 1px solid #385f8a;
+	border-right: 1px solid #385f8a;
+	margin-right: 5px;
+	margin-left: 5px;
+	background-color: #faf4f2;
+	margin-top: 5px;
+	padding: 10px;
+}
+
+#finalSubmit {
+	font-size: 1.3em;
+	color: #941651;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	padding: 15px;
+	border-radius:10px;
+	width: 75%;
+	text-align: center;
+	margin: auto;
+}
+
+button#submit_link {
+	color: #941100;
+	font-size: 1.3em;
+	font-weight: bold;
+	 background: white url("http://images.ourontario.ca/static/img/nav-bg.gif") bottom repeat-x;
+	border: 1px solid #bbb;
+    border-color: #ddd #aaa #aaa #ddd;
+
+}
+#site_home {
+	text-align: center;
+	font-size: 1.3em;
+}
+#site_home a:link {
+	font-size: 1.3em;
+	font-variant: small-caps;
+	margin-top: 10px;
+	padding-top: 20px;
+	top: 15px;
+	position: relative;
+}
+#site_home a:hover {
+	font-weight: bold;
+	color: #0432ff;
+}
+
+/* MyCollections Modal form 
+************************************************** */	
+form#form_collection ul li {
+	padding: 0 0 5px;
+	margin: 0 0 0 3px;
+}
+
+form#form_collection input#my_title, textarea#my_description, textarea#my_user_notes, textarea#my_user_tags {
+	width: 90%;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}	
+		
+form#form_collection, form#form_login {
+	font: .9em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+form#form_login label {
+	font: bold .95em "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-bottom: 0;
+}
+
+form#form_login p {
+	font-weight: bold;
+	font-style: italic;
+	font-size: .9em;
+	color: #7b0c00;
+	padding-top: 8px;
+	text-indent: 10px;
+}
+
+form#form_login input#user_name, input#user_pwd {
+	width: 90%;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+
+form#form_collection label {
+	font: bold .95em "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-bottom: 0;
+}
+
+form#form_collection #groupList
+{
+	background: #f8f8f8;
+	width: 85%;
+	border-bottom: 1px solid #c0c0c0;
+	border-right: 1px solid #d5d5d5;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+	z-index: 1;
+}
+
+form#form_collection ul li {
+	padding: 0 0 5px;
+	margin: 0 0 0 3px;
+}
+
+form#form_collection input#my_title, textarea#my_description, textarea#my_user_notes, textarea#my_user_tags {
+	width: 90%;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
 	
 /* Clearfix 
 (clears all floats, so that page can resume below)
